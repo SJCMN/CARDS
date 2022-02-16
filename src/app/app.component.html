@@ -1,12 +1,12 @@
 <!-- access to properties from class -->
 <!-- ngFor directive loops over instance of posts to create cards -->
 
-<app-card>
+<app-card
   *ngFor="let post of posts"
-    [title]="posts.title"
-    [imageUrl]="posts.imageUrl"
-    [username]="posts.username"
-    [content]="posts.content"
-</app-card>
+    [title]="post.title"
+    [imageUrl]="post.imageUrl"
+    [username]="post.username"
+    [content]="post.content">
+></app-card>
 
 
